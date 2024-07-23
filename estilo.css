@@ -1,0 +1,104 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E5E5E5;
+}
+
+header {
+    background-color: #0078D4;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav.open ul {
+    flex-direction: column;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.5s ease;
+    display: inline-block;
+    transition: transform 0.3s ease, background 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    color: #FFFFFF;
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+section {
+    padding: 2rem;
+    margin: 2rem 0;
+    background-color: #fff;
+    color: #000000;
+    border: 1px solid #E5E5E5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+}
+
+section h1 {
+    color: #0078D4;
+    margin-bottom: 1rem;
+}
+
+section p {
+    margin-bottom: 1rem;
+}
+
+section strong {
+    color: #0078D4;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 0.5rem 0 0.2rem;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 0.7rem;
+    border: 1px solid #0078D4;
+    border-radius: 4px;
+    background: linear-gradient(135deg, #0078D4, #00A4EF);
+    background-color: transparent;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background: linear-gradient(135deg, #00A4EF, #0078D4);
+    background-color: #0078D4;
+    color: #FFFFFF;
+    transform: scale(1.05);
+}
